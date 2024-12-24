@@ -1,0 +1,101 @@
+/* App.css */
+
+/* Set a nice gradient background for the entire page */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #d1e2e7); /* Light gradient background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  color: #333;
+}
+
+/* Main game container */
+.game {
+  background-color: #ffffff;
+  border-radius: 10px; /* Rounded corners for the game container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px; /* Fixed width for the game container */
+}
+
+/* Title of the game */
+h1 {
+  color: #4CAF50;
+  font-family: Garamond;
+  font-size: 36px;
+  margin-bottom: 20px;
+  
+}
+
+/* Game board styling */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Each row of the board */
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for individual squares */
+.square {
+  width: 100px;  /* Increased size of the square */
+  height: 100px;  /* Increased size of the square */
+  background-color: #f8f9fa;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px; /* Larger font size for better visibility */
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px; /* Rounded corners for the squares */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.square:hover {
+  background-color: #e2e6ea; /* Light gray on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.square:focus {
+  outline: none;
+}
+
+/* Message to show the winner or status */
+.game-info {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for reset button */
+.reset-button {
+  margin-top: 10px;
+  padding: 15px 30px;  /* Larger padding for the button */
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;  /* Larger text on the button */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Slight rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly enlarges the button */
+  border-color: #131413; /* Darker border color when hovered */
+}
